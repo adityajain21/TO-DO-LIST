@@ -1,0 +1,8 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_tasks_sp`(
+    IN p_id INT
+)
+BEGIN
+	select 1 from tasks where user_id = p_id;
+END$$
+DELIMITER ;
